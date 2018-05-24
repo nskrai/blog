@@ -26,6 +26,11 @@
     <%= form.check_box :ispublish %>
  </div>
  
+ <div class="field">
+    <%= form.label :status, "公開" %>
+    <%= form.select :status, [["公開中", "公開中"], ["下書き", "下書き"]]  %>
+ </div>
+ 
   <div class="actions">
     <%= form.submit %>
   </div>
